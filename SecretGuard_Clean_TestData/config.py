@@ -1,0 +1,5 @@
+APP_NAME = "Student Portal"
+APP_VERSION = "1.0"
+DEBUG_MODE = True
+MAX_USERS = 100
+DEFAULT_LANGUAGE = "English"
