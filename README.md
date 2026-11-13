@@ -333,11 +333,11 @@ The dashboard shows the outcome of each scan in its status banner. Before a scan
 
 <table>
 <tr>
-<td width="50%" align="center"><img src="./output-screenshots/SecretGuard1.png" width="100%"><br><sub><b>System Ready:</b> the dashboard before a scan</sub></td>
-<td width="50%" align="center"><img src="./output-screenshots/SecretGuard3.png" width="100%"><br><sub><b>Scan Clear:</b> the clean test project, with no findings</sub></td>
+<td width="50%" align="center"><img src="./output-screenshots/SecretGuardA.png" alt="SecretGuard dashboard in the System Ready state" width="100%"><br><sub><b>System Ready:</b> the dashboard before a scan</sub></td>
+<td width="50%" align="center"><img src="./output-screenshots/SecretGuardC.png" alt="SecretGuard dashboard showing Scan Clear for the clean test project" width="100%"><br><sub><b>Scan Clear:</b> the clean test project, with no findings</sub></td>
 </tr>
 <tr>
-<td colspan="2" align="center"><img src="./output-screenshots/SecretGuard2.png" width="65%"><br><sub><b>Threats Detected:</b> the test-data project, with 7 findings, filters, charts, and redacted values</sub></td>
+<td colspan="2" align="center"><img src="./output-screenshots/SecretGuardB.png" alt="SecretGuard dashboard showing Threats Detected with 7 findings for the test data" width="65%"><br><sub><b>Threats Detected:</b> the test-data project, with 7 findings, filters, charts, and redacted values</sub></td>
 </tr>
 </table>
 
