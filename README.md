@@ -223,6 +223,7 @@ Context checks never create a finding. They adjust the confidence of an existing
 * Scan overview metrics and detection charts showing where the findings came from
 * Findings list with severity badges, file location, redacted value, and fix recommendation
 * Filters for severity, detection method, and free-text search
+* Status banners: **System Ready** before a scan, **Threats Detected** when findings exist, and **Scan Clear** when nothing is found
 * One-click **Download JSON report** button
 
 ### 3. 🧠 Hybrid Detection Engine
@@ -320,16 +321,23 @@ Reported as **Critical · Private Key Block** with confidence 0.98.
 
 ---
 
+## 🔭 Project Overview
+
+SecretGuard works in two ways. The command-line tool prints a severity-sorted report to the terminal and can export JSON for scripts or CI. The Streamlit dashboard runs the same scan in a browser: you enter a project folder, and the dashboard summarizes the results as cards and charts, then lists each finding with its location, redacted value, and fix recommendation.
+
+The dashboard shows the outcome of each scan in its status banner. Before a scan, it shows **System Ready**. A scan that finds secrets shows **Threats Detected**, along with the files scanned, the number of findings, the critical count, and the scan time. A clean scan shows **Scan Clear** and reports that no secrets were detected.
+
+---
+
 ## 📸 Project Preview
 
 <table>
 <tr>
-<td width="50%"><img src="./output-screenshots/SecretGuard1.png" width="100%"></td>
-<td width="50%"><img src="./output-screenshots/SecretGuard2.png" width="100%"></td>
+<td width="50%" align="center"><img src="./output-screenshots/SecretGuard1.png" width="100%"><br><sub><b>System Ready:</b> the dashboard before a scan</sub></td>
+<td width="50%" align="center"><img src="./output-screenshots/SecretGuard3.png" width="100%"><br><sub><b>Scan Clear:</b> the clean test project, with no findings</sub></td>
 </tr>
 <tr>
-<td width="50%"><img src="./output-screenshots/SecretGuard3.png" width="100%"></td>
-<td width="50%"><img src="./output-screenshots/SecretGuard4.png" width="100%"></td>
+<td colspan="2" align="center"><img src="./output-screenshots/SecretGuard2.png" width="65%"><br><sub><b>Threats Detected:</b> the test-data project, with 7 findings, filters, charts, and redacted values</sub></td>
 </tr>
 </table>
 
